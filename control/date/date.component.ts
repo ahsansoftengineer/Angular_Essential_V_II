@@ -20,6 +20,7 @@ export class DateComponent extends BaseControlComponent  implements OnInit, OnCh
   @Input() startView: 'month' | 'year' | 'multi-year' = 'month';
   @Input() max: Date | null = null;
   @Input() min: Date | null = null;
+  @Input() dateFormate: string =  'yyyy-MM-dd';
   datePipe: DatePipe
   constructor(injector: Injector) {
     super(injector);
@@ -30,11 +31,12 @@ export class DateComponent extends BaseControlComponent  implements OnInit, OnCh
     super.ngOnInit();
     if (this.disabled) this.control.disable();
     this.control.valueChanges.subscribe(data => {
-      this.control.patchValue(this.setFormThatDate(data), {emitEvent:false})
+      this.control.patchValue(this.setFormThatDate(data), { emitEvent:false })
     })
   }
+  // This could be change so the end developer can decide what format to put in the form
   setFormThatDate(selectedDate){
-    return  this.datePipe.transform(selectedDate, 'yyyy-MM-dd')
+    return  this.datePipe.transform(selectedDate, this.dateFormate)
   }
   ngOnChanges(changes: SimpleChanges) {
     if (changes?.disabled?.currentValue != undefined) {

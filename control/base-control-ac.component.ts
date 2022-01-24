@@ -3,7 +3,7 @@ import { FormControl } from '@angular/forms';
 import { Observable, of, catchError } from 'rxjs';
 import { debounceTime, distinctUntilChanged, filter, map, switchMap } from 'rxjs/operators';
 import { SelectOption } from 'src/app/interface/common/select';
-import { BaseControlBridgeComponent } from './base-control-duplicate.component';
+import { BaseControlBridgeComponent } from './base-control-select-bridge.component';
 
 @Component({
   selector: 'my-base-control-ac',

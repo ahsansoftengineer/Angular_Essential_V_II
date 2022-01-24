@@ -1,7 +1,7 @@
 import { Component, Injector, OnInit } from '@angular/core';
 import { distinctUntilChanged } from 'rxjs/operators';
 import { URLz } from 'src/app/enums/url.enum';
-import { BaseControlBridgeComponent } from './base-control-duplicate.component';
+import { BaseControlBridgeComponent } from './base-control-select-bridge.component';
 
 @Component({
   selector: 'my-base-control-dd',
