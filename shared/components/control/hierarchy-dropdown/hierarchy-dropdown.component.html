@@ -1,0 +1,14 @@
+<mat-form-field appearance="outline" *ngIf="control" class="col-md-12 my-1">
+    <mat-label>{{ lbl }}</mat-label>
+    <mat-select [formControl]="control" [disabled]="disabled" required>
+      <mat-option
+        [disabled]="_fhs._dd_selected(field, item.id)"
+        *ngFor="let item of list" [value]="item.id">
+        {{item.title}}
+      </mat-option>
+    </mat-select>
+    <mat-error>
+      {{ _vs._error_control(control)?.message }}
+    </mat-error>
+</mat-form-field>
+  

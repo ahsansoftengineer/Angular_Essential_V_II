@@ -1,0 +1,13 @@
+<input type="text" [placeholder]="lbl"
+(click)="_stop($event)" (keydown)="_stop($event)"
+  class="search" [formControl]="searchControl"
+  [matAutocomplete]="listAC">
+<mat-autocomplete autoActiveFirstOption
+#listAC="matAutocomplete">
+  <mat-option
+    [value]="item.title"
+    (click)='setFormValue(item)'
+    *ngFor="let item of temp | async">
+    {{item.title}}
+  </mat-option>
+</mat-autocomplete>

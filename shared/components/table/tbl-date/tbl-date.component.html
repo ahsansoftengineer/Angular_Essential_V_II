@@ -1,0 +1,14 @@
+<input [formControl]="control" [placeholder]="lbl" class="search"
+(keydown)="picker.open(); _stop($event)" (click)="picker.open(); _stop($event)"
+[matDatepicker]="picker"
+[min]='min'
+[max]='max'
+[formControl]="control"
+[required]='req'
+readonly
+[disabled]='disabled'
+>
+<mat-datepicker minutes="true" #picker [disabled]="disabled" ></mat-datepicker>
+
+
+
