@@ -1,0 +1,171 @@
+/* img */
+.custom__img__div{
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #8e8e8e;
+  border-radius: 3px;
+}
+.custom__img{
+  display: block;
+  width: 100px;
+  height: 150px;
+  margin: 0px auto;
+}
+/* img */
+
+.card__styling{
+  box-shadow: 0px 0px 10px #0000003d;
+}
+.custom__card__body__styling{
+  padding: 0px;
+  overflow-x: clip;
+}
+.custom__card__body__styling h2{
+  font-size: 22px;
+  background: #039be5;
+  box-shadow: 0px 10px 7px -7px #00000057;
+  margin: 0px 0px 10px 0px;
+  padding: 10px 10px;
+  color: white;
+}
+/* buttons save Cancel */
+.text_align{
+    text-align: right;
+}
+.custon__btns__class{
+  width: 100px;
+  padding: 5px 0px;
+}
+@media(max-width: 768px){
+  .text_align{
+      text-align: center;
+  }
+}
+/* buttons save Cancel */
+/* fields line height work */
+.mat-form-field-appearance-outline .mat-form-field-infix{
+    padding: 5px 0 7px 0 !important;
+}
+/* ------------------- */
+.mat-form-field-appearance-outline .mat-form-field-label{
+  top: 30px !important;
+  margin-top: -15px !important;
+  font-weight: 700 !important;
+  font-size: 15px;
+  color: #303030ad;
+}
+.mat-form-field-label-wrapper{
+    overflow: visible !important;
+}
+/* ------------------- */
+/* fields line height work */
+.mat-select-panel{
+  width: 100% !important;
+  min-width: 100% !important;
+  /* transform: translate(15px, 40px) !important; */
+  background: #ffffff !important;
+  border: 1px solid #00000033;
+  box-shadow: 0px 0px 11px -4px #0000009c !important;
+}
+.mat-select-value{
+  font-size: 16px;
+  font-weight: 600 !important;
+  overflow: hidden !important;
+}
+.mat-input-element{
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+.mat-option-text{
+  color: #0c0c0c;
+}
+/* :host /deep/ .mat-form-field-outline-gap{
+  width: auto !important;
+} */
+/* fields border hover */
+:host /deep/ .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick,
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick{
+color: #0eb9ec !important;
+}
+:host /deep/ .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick {
+  color: #f44836 !important;
+}
+
+:host /deep/ .mat-form-field.mat-focused.mat-form-field-invalid .mat-form-field-label,
+:host /deep/ .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+  color: #f44836 !important;
+}
+/* fields border hover */
+.mat-form-field.mat-focused .mat-form-field-label{
+  color: #0c0c0c !important;
+  overflow: visible !important;
+  /* font-size: 15px; */
+}
+.mat-form-field-label{
+  overflow: visible !important;
+}
+.mat-form-field.mat-focused.mat-primary .mat-select-arrow{
+  color: #0c0c0c !important;
+}
+/* fields border */
+.mat-form-field-appearance-outline .mat-form-field-outline{
+  color: #0c0c0c77;
+}
+/* fields border */
+
+/* toggler */
+.ng-touched.ng-valid{
+  color: #0c0c0c !important;
+}
+.mat-slide-toggle.mat-primary.mat-checked .mat-slide-toggle-thumb{
+  background-color: #0eb9ec !important;
+}
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb{
+  background-color: #0eb9ec !important;
+}
+.mat-slide-toggle.mat-primary.mat-checked .mat-slide-toggle-bar{
+  background-color: #024d7071 !important;
+}
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar{
+  background-color: #024d7071 !important;
+}
+.mat-slide-toggle.mat-checked .mat-ripple-element{
+  background-color: #024d7071 !important;
+}
+/* toggler */
+
+/* disabled */
+.mat-form-field-appearance-outline.mat-form-field-disabled .mat-form-field-outline{
+  color: #bfc1c4;
+}
+/* disabled */
+
+
+
+/* toggle bar */
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb-container{
+  transform: translate3d(30px, 0, 0) !important;
+}
+.mat-slide-toggle-bar{
+    width: 50px !important;
+}
+/* toggle bar */
+
+/* error font-size */
+.mat-error{
+    font-size: 10px;
+}
+/* error font-size */
+
+
+/* search input mt */
+.cdk-overlay-pane{
+  transform: translateX(0px) translateY(25px) !important;
+}
+ngx-mat-select-search .mat-select-search-inner{
+  background: #edf1f5 !important;
+}
+ngx-mat-select-search .mat-select-search-no-entries-found{
+  background: #eaeff5 !important;
+}
+/* search input mt */

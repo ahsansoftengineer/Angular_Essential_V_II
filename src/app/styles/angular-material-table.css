@@ -1,0 +1,259 @@
+
+/* Global Style for List */
+/* .table-responsive {
+  display: inline-table;
+}
+@media screen and (max-width: 767px) {
+  .table-responsive {
+    display: block;
+  }
+} */
+/* Material Table CSS */
+.mat-sort-header-container {
+  /* display: block !important; */
+  justify-content: flex-end !important;
+}
+table {
+  width: 100%;
+}
+.mat-table {
+  font-family: "Poppins", sans-serif !important;
+}
+th.mat-sort-header-sorted {
+  color: rgb(71, 71, 71);
+}
+.search{
+  border:0px;
+  background-color: transparent;
+  float: left;
+}
+.mat-row .mat-cell {
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+  /* cursor: pointer; */
+}
+
+.mat-row:hover .mat-cell {
+  border-bottom: 1px solid gainsboro;
+  border-top: 1.5px solid gainsboro;
+}
+.innerItems{
+  font-size: 8px;
+  border-radius:5px;
+  border: 1px solid black;
+  float: left;
+}
+.mat_table {
+  width: 100%;
+  overflow: auto;
+}
+
+.example-sticky-toggle-group {
+  margin: 8px;
+}
+
+.mat-column-filler {
+  padding: 0 8px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.mat-header-cell, .mat-footer-cell, .mat-cell {
+  min-width: 100px;
+  box-sizing: border-box;
+}
+
+.mat-header-row, .mat-footer-row, .mat-row {
+  min-width: 1920px; /* 24 columns, 80px each */
+}
+.mat-table-sticky-border-elem-right {
+  border-left: 5px solid midnightblue;
+}
+.mat-table-sticky-border-elem-left {
+  border-right: 5px solid midnightblue;
+}
+.eye button.mat-ripple.mat-icon-button.cdk-focused.cdk-mouse-focused {
+  border: none !important;
+  width: inherit !important;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #03a9f3 !important;
+  background-color: #03a9f3 !important;
+}
+/* .mat-cell, .mat-header-cell {
+  padding-left:3px !important;
+  padding-right:3px !important;
+} */
+/* .mat-table-sticky-border-elem-right {
+  border-left: 2px solid midnightblue;
+  border-right: 2px solid midnightblue;
+} */
+.mat-column-id {
+  width: 15px;
+  border-right: 1px solid rgba(144, 144, 148, 0.507);
+}
+.mat-column-actions {
+  width: 15px;
+  /* border-left: 1px solid rgba(144, 144, 148, 0.507) ; */
+  text-align: center;
+}
+.mat-header-cell {
+  background: #cfcfcf;
+}
+.mat-row:nth-child(odd) {
+  background-color: rgb(239, 239, 239);
+}
+.mat-row:hover {
+  background-color: rgb(226 226 226);
+}
+.mat-header-cell,
+.ti-reload, .ti-search,
+table.mat-table input::-webkit-input-placeholder {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+}
+
+#main-wrapper[data-layout="vertical"] .left-sidebar[data-sidebarbg="skin6"] .sidebar-nav ul .sidebar-item .sidebar-link,
+#main-wrapper[data-layout="horizontal"] .left-sidebar[data-sidebarbg="skin6"] .sidebar-nav ul .sidebar-item .sidebar-link {
+  color: #000000 !important;
+  opacity: 2 !important;
+}
+
+
+#main-wrapper[data-layout="vertical"] .left-sidebar[data-sidebarbg="skin6"] .sidebar-nav ul .sidebar-item .sidebar-link:hover,
+#main-wrapper[data-layout="vertical"] .left-sidebar[data-sidebarbg="skin6"] .sidebar-nav ul .sidebar-item .sidebar-link.active,
+#main-wrapper[data-layout="horizontal"] .left-sidebar[data-sidebarbg="skin6"] .sidebar-nav ul .sidebar-item .sidebar-link:hover,
+#main-wrapper[data-layout="horizontal"] .left-sidebar[data-sidebarbg="skin6"] .sidebar-nav ul .sidebar-item .sidebar-link.active {
+  color: #2f2a6b !important;
+}
+
+.card__styling{
+  box-shadow: 0px 0px 10px #0000003d;
+}
+.text-red{
+  color: #c53b55;
+}
+.mat-column-id{
+  border-right: 0px solid #90909400 !important;
+}
+/* HEADER STYLE */
+.custom__card__body__styling{
+  padding: 0px;
+  overflow-x: clip;
+}
+.custom__card__body__styling h2{
+  font-size: 22px;
+  background: #039be5;
+  box-shadow: 0px 10px 7px -7px #00000057;
+  margin: 0px 0px 10px 0px;
+  padding: 10px 10px;
+  color: white;
+}
+/* HEADER STYLE */
+
+/* HEADER BUTTON STYLE */
+.custon__add__btns__class{
+    margin: -7px 0px;
+    background-color: #00c292;
+    border-color: #00c292;
+    box-shadow:0px 0px 10px -5px #0000008f;
+}
+.custon__add__btns__class:hover{
+  box-shadow: 0 0 0 0.2rem #1e9d7d80 !important;
+}
+.custon__add__btns__class:active{
+  background-color: #01cb99 !important;
+  border-color: #01cb99 !important;
+  box-shadow: 0 0 0 0.2rem #1e9d7d80 !important;
+}
+/* HEADER BUTTON STYLE */
+
+/* TABLE header STYLING */
+.slection__styled :host /deep/  .search.ng-touched{
+  color: #1a1a1a !important;
+
+}
+.mat-header-cell{
+  background: #024e70 !important;
+  color: white !important;
+}
+.search{
+  color: #ffffff !important;
+  border-bottom: 1px solid whitesmoke;
+}
+:host /deep/  .mat-sort-header-arrow{
+  color: white;
+}
+:host /deep/  .mat-sort-header-content{
+  color: white !important;
+}
+:host /deep/  .search::placeholder{
+  color: #ffffff !important;
+}
+:host /deep/  .search.ng-touched{
+  color: #ffffff !important;
+}
+:host /deep/  .search .ng-star-inserted{
+  color: #000 !important;
+}
+/* TABLE header STYLING */
+
+/* list styling in table */
+.mat_table{
+  max-height: 490px;
+  height: auto;
+}
+tr.mat-header-row{
+  height: 40px !important;
+}
+:host /deep/  tr.mat-row, tr.mat-footer-row{
+  height: 40px !important;
+}
+.mat-header-cell, .mat-footer-cell, .mat-cell{
+  white-space: nowrap !important;
+}
+.mat-row:nth-child(odd){
+  background-color: #ffffff00 !important;
+  transition: 0.1s;
+}
+.mat-row:nth-child(even){
+  background-color: #b3eeff2c !important;
+  border-top: 2px solid #0000000d !important;
+  border-bottom: 2px solid #0000000d !important;
+  transition: 0.1s;
+}
+.mat-row:nth-child(even):hover{
+  box-shadow:0px 0px 8px 0px #0000005e;
+}
+.mat-row:nth-child(odd):hover{
+  box-shadow:0px 0px 8px 0px #0000005e;
+}
+/* list styling in table */
+
+/* chack on or off button  styling */
+:host /deep/  .switch.switch-small.checked{
+  background-color: #03a9f3 !important;
+}
+/* chack on or off button  styling */
+
+/* select box styling */
+.custom__select__class{
+  border-radius: 3px;
+  padding: 4px;
+  border: 1px solid #0000004b;
+  background: white;
+}
+.custom__select__class .cus_opt{
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px black;
+}
+/* select box styling */
+
+/* pagination area */
+:host /deep/  .mat-paginator-range-label{
+  margin: 0px !important;
+}
+/* pagination area */

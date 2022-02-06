@@ -1,0 +1,11 @@
+<select (click)="_stop($event)" [formControl]="control" class="search">
+  <option [value]="
+    control.value == null ? null :
+    control.value == undefined ? undefined: ''" disabled>
+    {{ lbl }}
+  </option>
+  <option class="search" style="padding: 5px;" [disabled]="control.value == item.id"
+    (onSelectionChange)='changeEvent({ who:field, id: item.id, code: item[parentKey], obj: item, event: $event})' *ngFor="let item of list" [value]="item.id">
+    {{item.title}}
+  </option>
+</select>

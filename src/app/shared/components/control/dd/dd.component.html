@@ -1,0 +1,23 @@
+<mat-form-field appearance="outline" *ngIf="control && !hide" class="col-md-12 my-1">
+  <mat-label>{{ lbl }}</mat-label>
+  <mat-select [formControl]="control" [disabled]="disabled" [required]='req'>
+    <mat-option
+      *ngIf="!list?.length && control?.value == preobj?.id"
+      [disabled]="control.value == preobj?.id || control.value == preobj?.code "
+      [value]="preobj?.id ? preobj?.id : preobj?.code"
+    >{{ preobj?.title}}</mat-option>
+    <mat-option
+      *ngFor="let item of list" [value]="item.id"
+      [disabled]="control.value == item.id"
+      (onSelectionChange)='changeEvent({
+        who:field,
+        id: item.id,
+        code: item[parentKey],
+        obj: item,
+        event: $event
+      })'
+    > {{ renderRow(item) }}
+    </mat-option>
+  </mat-select>
+  <mat-error>{{ _vs._error_control(control)?.message }}</mat-error>
+</mat-form-field>

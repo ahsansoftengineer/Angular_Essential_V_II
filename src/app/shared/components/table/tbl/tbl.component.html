@@ -1,0 +1,7 @@
+<div>
+  <table mat-table #table [dataSource]="dataSource" style="width: 100%">
+    <ng-content></ng-content>
+    <tr mat-header-row *matHeaderRowDef="_columns"></tr>
+    <tr mat-row *matRowDef="let row; columns: _columns;"></tr>
+  </table>
+</div>

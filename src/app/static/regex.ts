@@ -3,6 +3,7 @@ export abstract class RegExps {
   // alpha: RegExp = /([a-zA-Z _-]+)$/;
   static ALPHA: RegExp = /^[a-zA-Z -]*$/;
   static WHITE_SPACE: RegExp = /^[^\s]+(\s+[^\s]+)*$/;
+  static HYPHEN_REG: RegExp = /^(?!-).*[^-]$/;
   static ALPHANUM: RegExp = /([a-zA-Z0-9 _-]+)$/;
   static NUM: RegExp = /([0-9]+)$/;
   static POSITIVENUM : RegExp = /^(?:[+\d].*\d|\d)$/;

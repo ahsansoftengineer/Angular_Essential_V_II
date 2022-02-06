@@ -1,0 +1,37 @@
+/* NGX TOASTER */
+/* .toast-container {
+  background-image: linear-gradient(purple,red) !important;
+  border-radius: 22px !important;
+  box-shadow: -5px 8px 16px 0px rgba(0,0,0,0.3) !important;
+  margin-bottom: 2px !important;
+} */
+
+.toast-container .toast {
+  margin: 2px !important;
+  box-shadow: none !important;
+  /* border-radius: 10px !important; */
+  background-color: rgb(202, 10, 10) !important;
+  color: yellow;
+}
+
+.toast-error::after{
+  content: '\f00c' !important;
+  font-family: 'FontAwesome' !important;
+  position: absolute !important;
+  top: 14px !important;
+  left: 15px !important;
+  color: rgb(255, 255, 255) !important;
+  font-size: 1em !important;
+}
+
+.toast-title{
+  color: #4b1414 !important;
+  font-size: 16px !important;
+}
+
+.toast-message{
+  color:#ffffff !important;
+}
+.iconClass{
+  color: red;
+}

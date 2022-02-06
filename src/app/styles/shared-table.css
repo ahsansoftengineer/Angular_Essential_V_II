@@ -1,0 +1,128 @@
+.card__styling{
+  box-shadow: 0px 0px 10px #0000003d;
+}
+.text-red{
+  color: #c53b55;
+}
+.mat-column-id{
+  border-right: 0px solid #90909400 !important;
+}
+/* HEADER STYLE */
+.custom__card__body__styling{
+  padding: 0px;
+  overflow-x: clip;
+}
+.custom__card__body__styling h2{
+  font-size: 22px;
+  background: #039be5;
+  box-shadow: 0px 10px 7px -7px #00000057;
+  margin: 0px 0px 10px 0px;
+  padding: 10px 10px;
+  color: white;
+}
+/* HEADER STYLE */
+
+/* HEADER BUTTON STYLE */
+.custon__add__btns__class{
+    margin: -7px 0px;
+    background-color: #00c292;
+    border-color: #00c292;
+    box-shadow:0px 0px 10px -5px #0000008f;
+}
+.custon__add__btns__class:hover{
+  box-shadow: 0 0 0 0.2rem #1e9d7d80 !important;
+}
+.custon__add__btns__class:active{
+  background-color: #01cb99 !important;
+  border-color: #01cb99 !important;
+  box-shadow: 0 0 0 0.2rem #1e9d7d80 !important;
+}
+/* HEADER BUTTON STYLE */
+
+/* TABLE header STYLING */
+.slection__styled .search.ng-touched{
+  color: #1a1a1a !important;
+
+}
+.mat-header-cell{
+  background: #024e70 !important;
+  color: white !important;
+}
+.search{
+  color: #ffffff !important;
+  border-bottom: 1px solid whitesmoke;
+}
+.mat-sort-header-arrow{
+  color: white;
+}
+.mat-sort-header-content{
+  color: white !important;
+}
+.search::placeholder{
+  color: #ffffff !important;
+}
+.search.ng-touched{
+  color: #ffffff !important;
+}
+.search .ng-star-inserted{
+  color: #000 !important;
+}
+/* TABLE header STYLING */
+
+/* list styling in table */
+.mat_table{
+  max-height: 490px;
+  height: auto;
+}
+tr.mat-header-row{
+  height: 40px !important;
+}
+tr.mat-row, tr.mat-footer-row{
+  height: 40px !important;
+}
+.mat-header-cell, .mat-footer-cell, .mat-cell{
+  white-space: nowrap !important;
+}
+.mat-row:nth-child(odd){
+  background-color: #ffffff00 !important;
+  transition: 0.1s;
+}
+.mat-row:nth-child(even){
+  background-color: #b3eeff2c !important;
+  border-top: 2px solid #0000000d !important;
+  border-bottom: 2px solid #0000000d !important;
+  transition: 0.1s;
+}
+.mat-row:nth-child(even):hover{
+  box-shadow:0px 0px 8px 0px #0000005e;
+}
+.mat-row:nth-child(odd):hover{
+  box-shadow:0px 0px 8px 0px #0000005e;
+}
+/* list styling in table */
+
+/* chack on or off button  styling */
+.switch.switch-small.checked{
+  background-color: #03a9f3 !important;
+}
+/* chack on or off button  styling */
+
+/* select box styling */
+.custom__select__class{
+  border-radius: 3px;
+  padding: 4px;
+  border: 1px solid #0000004b;
+  background: white;
+}
+.custom__select__class .cus_opt{
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px black;
+}
+/* select box styling */
+
+/* pagination area */
+.mat-paginator-range-label{
+  margin: 0px !important;
+}
+/* pagination area */

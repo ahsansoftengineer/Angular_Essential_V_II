@@ -1,0 +1,260 @@
+<!-- ============================================================== -->
+<!-- toggle and nav items -->
+<!-- ============================================================== -->
+<ul class="navbar-nav float-left mr-auto">
+  <li class="nav-item d-none d-lg-block">
+    <a (click)="toggleSidebar.emit()" class="nav-link sidebartoggler waves-effect waves-light"
+      href="javascript:void(0)">
+      <i class="ti-menu"></i>
+    </a>
+  </li>
+  <!-- Search -->
+  <!-- <li class="nav-item m-l-10 mt-0 mt-md-3 mt-lg-0 align-self-center d-none d-md-block">
+        <form role="search" class="app-search">
+            <input type="text" placeholder="Search..." class="form-control">
+            <a href="javascript:void(0)">
+                <i class="fa fa-search"></i>
+            </a>
+        </form>
+    </li> -->
+</ul>
+<!-- ============================================================== -->
+<!-- Right side toggle and nav items -->
+<!-- ============================================================== -->
+<ul class="navbar-nav float-right">
+  <li class="nav-item dropdown userprof" ngbDropdown placement="bottom-right">
+    <div class="user-profile">
+      <!-- User profile text-->
+      <div style="font-size: 14px; margin-right: 10px;
+      padding-bottom: 20px;  color:white">
+        <!-- User profile image -->
+        {{name}}
+      <!-- <mat-icon>more_vert</mat-icon> -->
+        <button mat-icon-button type="menu">
+          <mat-icon  mat-icon-button [matMenuTriggerFor]="menu">
+            keyboard_arrow_down
+          </mat-icon>
+        </button>
+        <!-- <button mat-icon-button   type="menu">
+          <mat-icon  mat-icon-button  >
+            <i class="fas fa-user-circle p-0 m-0"></i>
+          </mat-icon>
+        </button> -->
+      <!-- <mat-icon>more_vert</mat-icon> -->
+        <mat-menu #menu="matMenu">
+          <a href="{{myProfile}}" target="_self" class="dropdown-item">
+            <i class="ti-user"></i> My Profile</a>
+          <div class="dropdown-divider"></div>
+          <a href="{{userSetting}}" target="_self" class="dropdown-item">
+            <i class="ti-settings"></i> Account Setting</a>
+          <div class="dropdown-divider"></div>
+          <a href="{{logout}}" (click)="clearLocalStorage()" class="dropdown-item" target="_self">
+            <i class="fa fa-power-off"></i> Logout</a>
+        </mat-menu>
+      </div>
+    </div>
+  </li>
+
+  <li class="nav-item dropdown" ngbDropdown placement="bottom-right">
+    <a ngbDropdownToggle class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
+      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="flag-icon flag-icon-{{selectedLanguage.icon}}"></i>
+    </a>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" ngbDropdownMenu>
+      <span class="dropdown-item" href="#" *ngFor="let lang of languages" (click)="changeLanguage(lang)">
+        <i class="flag-icon flag-icon-{{lang.icon}}"></i>
+        <span>{{lang.language}}
+          <span *ngIf="lang.type">({{lang.type}})</span>
+        </span>
+      </span>
+    </div>
+  </li>
+  <!-- Comment -->
+  <!-- <li class="nav-item dropdown" ngbDropdown placement="bottom-right">
+        <a ngbDropdownToggle class="nav-link dropdown-toggle waves-effect waves-dark" href="javascript:void(0)"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-circle"></i>
+
+        </a>
+        <div class="dropdown-menu dropdown-menu-right mailbox" ngbDropdownMenu>
+            <ul class="list-style-none">
+                <li class="border-bottom">
+                    <div class="drop-title">Notifications</div>
+                </li>
+                <li>
+                    <div class="message-center notifications height-widget" [perfectScrollbar]="config">
+
+                        <a href="javascript:void(0)" class="message-item" *ngFor="let notification of notifications">
+                            <span class="btn btn-circle {{notification.btn}}">
+                                <i class="{{notification.icon}}"></i>
+                            </span>
+                            <span class="mail-contnet">
+                                <h5 class="message-title">{{notification.title}}</h5>
+                                <span class="mail-desc">{{notification.subject}}</span>
+                                <span class="time">{{notification.time}}</span>
+                            </span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a class="link text-center m-b-5" href="javascript:void(0);">
+                        <strong>Check all notifications</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </li> -->
+  <!-- End Comment -->
+
+
+
+
+
+  <!-- Messages -->
+  <!-- <li class="nav-item dropdown" ngbDropdown placement="bottom-right">
+        <a ngbDropdownToggle class="nav-link dropdown-toggle waves-effect waves-dark" href="javascript:void(0)" id="2"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="icon icon-envelope"></i>
+            <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right mailbox" aria-labelledby="2" ngbDropdownMenu>
+            <ul class="list-style-none">
+                <li class="border-bottom">
+                    <div class="drop-title">Messages</div>
+                </li>
+                <li>
+                    <div class="message-center message-body height-widget" [perfectScrollbar]="config"> -->
+  <!-- Message -->
+  <!--  <a href="javascript:void(0)" class="message-item" *ngFor="let mymessage of mymessages">
+                            <span class="user-img">
+                                <img src="{{mymessage.useravatar}}" alt="user" class="rounded-circle">
+                                <span class="profile-status {{mymessage.status}} pull-right"></span>
+                            </span>
+                            <span class="mail-contnet">
+                                <h5 class="message-title">{{mymessage.from}}</h5>
+                                <span class="mail-desc">{{mymessage.subject}}</span>
+                                <span class="time">{{mymessage.time}}</span>
+                            </span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a class="link text-center" href="javascript:void(0);">
+                        <b>See all e-Mails</b>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </li> -->
+  <!-- End Messages -->
+  <!-- mega menu -->
+  <!-- <li class="nav-item mega-dropdown" ngbDropdown [autoClose]="false">
+        <a ngbDropdownToggle class="nav-link waves-effect waves-dark" href="javascript:void(0)" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Mega
+            <i class="icon icon-options-vertical"></i>
+        </a>
+        <div class="dropdown-menu" ngbDropdownMenu>
+            <div class="mega-dropdown-menu row">
+                <div class="col-lg-3 col-xlg-2 m-b-30">
+                    <h4 class="m-b-20">CAROUSEL</h4> -->
+  <!-- CAROUSEL -->
+  <!-- <ngb-carousel>
+                        <ng-template ngbSlide>
+                            <img src="assets/images/big/img1.jpg" class="img-fluid" alt="Random first slide">
+                            <div class="carousel-caption">
+                                <h3 class="text-white font-bold">First slide label</h3>
+                            </div>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <img src="assets/images/big/img2.jpg" class="img-fluid" alt="Random second slide">
+                            <div class="carousel-caption">
+                                <h3 class="text-white font-bold">Second slide label</h3>
+                            </div>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <img src="assets/images/big/img3.jpg" class="img-fluid" alt="Random third slide">
+                            <div class="carousel-caption">
+                                <h3 class="text-white font-bold">Third slide label</h3>
+                            </div>
+                        </ng-template>
+                    </ngb-carousel> -->
+  <!-- End CAROUSEL -->
+  <!-- </div>
+                <div class="col-lg-3 m-b-30">
+                    <h4 class="m-b-20">ACCORDION</h4> -->
+  <!-- Accordian -->
+  <!-- <ngb-accordion [closeOthers]="true" _activeIds="static-1" class="accordion nav-accordion">
+                        <ngb-panel id="static-1" title="Simple">
+                            <ng-template ngbPanelContent>
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid.
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="static-2">
+                            <ng-template ngbPanelTitle>
+                                <span>&#9733;
+                                    <b>Fancy</b> title &#9733;</span>
+                            </ng-template>
+                            <ng-template ngbPanelContent>
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid.
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="static-3" title="Disabled" [disabled]="true">
+                            <ng-template ngbPanelContent>
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid.
+                            </ng-template>
+                        </ngb-panel>
+                    </ngb-accordion>
+                </div>
+                <div class="col-lg-3  m-b-30">
+                    <h4 class="m-b-20">CONTACT US</h4> -->
+  <!-- Contact -->
+  <!-- <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputname1" placeholder="Enter Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Enter email"> </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleTextarea" rows="3"
+                                placeholder="Message"></textarea>
+                        </div>
+                        <button mat-raised-button  type="submit" class="btn btn-info">Submit</button>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-xlg-4 m-b-30">
+                    <h4 class="m-b-20">List style</h4> -->
+  <!-- List style -->
+  <!-- <ul class="list-style-none">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="fa fa-check text-success"></i> You can give link</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="fa fa-check text-success"></i> Give link</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="fa fa-check text-success"></i> Another Give link</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="fa fa-check text-success"></i> Forth link</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="fa fa-check text-success"></i> Another fifth link</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li> -->
+  <!-- End mega menu -->
+</ul>
